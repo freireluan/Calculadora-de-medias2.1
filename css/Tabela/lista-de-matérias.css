@@ -1,0 +1,78 @@
+body{
+    background-color: rgba(215, 215,215, 0.6)
+}
+.materia-item {
+    width: 250px;
+    display: inline-block;
+    padding:0.1rem;
+    font-size: 1.1rem;
+    background-color: aqua;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
+   
+
+}
+.materiaDaListaTitulo{
+    display: inline-block;
+    margin: 0.2rem;
+    vertical-align: top;
+}
+.div-apagar{
+    width: 20%;
+    height: 80%;
+    margin-left: 1rem;
+    padding: 0.4rem;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    /* background-color: aliceblue;
+    border: 1.6px  solid black;
+    border-radius: 0.5rem;
+    box-shadow: 2px 1.7px 1.2px black; */
+}
+
+.imagem-apagar{
+    font-size: 1rem;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: red;
+    text-shadow: 0.8px 0.8px 0.5px black;
+}
+
+#checkbox-materia{
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 0.8rem;
+    margin: 0.1rem;
+}
+
+.adicionar-materia{
+    margin: 0.7rem;
+    padding: 0.2rem;
+}
+.adicionar-materia h4, .adicionar-materia input{
+    font-size: 1.1rem;
+    padding: 0.3rem;
+    margin: 0.2rem;
+}
+
+#botao-adicionar-materia{
+    background-color: orangered;
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+    font-size: 1.2rem;
+
+}
+
+@media only screen and (max-device-width: 1080px) {
+    .formulario-matérias{
+        width: 100%;
+        display: inline-block;
+    }
+    .materia-item{
+        width: 47%;
+    }
+
+}
+

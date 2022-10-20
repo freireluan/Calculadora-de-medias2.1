@@ -1,0 +1,47 @@
+.cadastra-materia{
+    opacity: 10;
+    width: 85%;
+    vertical-align: top;
+}
+.label-materia{
+    font-size: 1.7rem;
+    width: 95%;
+    padding: 0.3rem;
+    margin: 1%;
+}
+.materia-a-ser-adicionada{
+    margin: 2%;
+    padding: 0.3rem;
+    width: 75%;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+}
+.botao-adicionar{
+    width: 80%;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    background-color: orangered;
+    border: 1px solid black;
+    border-radius: 0.49rem;
+    margin:0.4rem;
+    transition: 3s;
+}
+#adicionar-materia :hover{
+    cursor: pointer;
+    background-color: orange;
+}
+
+.naoesxiste{
+    display: none !important;
+    opacity: 0;
+}
+.botao-importar{
+    margin: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: orangered;
+}
+.botao-importar:hover{
+    cursor: pointer;
+}

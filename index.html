@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Calculadora De Médias 2.1</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/menu/menu.css">
+    <link rel="stylesheet" href="./css/Tabela/form-cadastro.css">
+    <link rel="stylesheet" href="./css/Tabela/lista-de-matérias.css">
+    <link rel="stylesheet" href="./css/Tabela/tabela.css">
+    <link rel="stylesheet" href="./css/Tabela/Materias-Tabela.css">
+    <link rel="stylesheet" href="./css/formulario-notas-materias/formulario.css">
+    <link rel="stylesheet" href="./css/menu/configuraçoes.css">
+    <link rel="stylesheet" href="./css/Tabela/tabelaMediasGerais.css">
+
+
+</head>
+<body>
+    <header>
+        <section class="menu">
+            <div class="container naoesxiste">
+                <input type="checkbox" id="checkbox-menu">
+                <label for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <h1 id="titulo_principal">Calculadora de Médias</h1>
+        </section>
+    </header>
+    <main>
+        <section class="listaMaterias naoesxiste">
+           
+        </section>
+        <section class="adicionar-materia">
+            <h4>Adicione uma Matéria </h4>
+            <input type="text" placeholder="Nome da Matéria">
+            <button id="botao-adicionar-materia">Adicionar</button>
+        </section>
+
+        <div class="menuAndTabelaresults">
+            <section class="configuracoes">
+                <div class="modulodeDivisoes itemconf">
+                    <p class="pergunta">Em qual Formato será organizado o cálculo</p>
+                    <select class="selecionar">
+                        <option value="3">Trimestre</option>
+                        <option value="2">Semestre</option>
+                        <option value="4">Bimestres</option>
+                    </select>
+                </div>
+                <div class="modulosCalculados itemconf">
+                    <p class="pergunta">Quantos Trimestres serão calculados</p>
+                    <select class="selecionar">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="mediaASerAtingida itemconf">
+                    <p class="pergunta">Qual é a média miníma a ser atingida</p>
+                    <input class="media" type="tel">
+                </div>
+                <div class=" botaoconfigurar">
+                    <button>Confirmar</button>
+                </div>
+
+
+            </section>
+
+            <section class="mediasGerais">
+                <table class="tabelaMedias">
+                    <tr class="linhaMediasGerais">
+                        <td class="celulaMediasGerais">Média 1° Trimestre</td>
+                        <td class="celulaMediasGerais">Média 2° Trimestre</td>
+                        <td class="celulaMediasGerais">Média 3° Trimestre</td>
+                        <td class="celulaMediasGerais">Média Geral</td>
+                    </tr>
+                    <tr class="linhaMediasGerais">
+                        <td class="celulaMediasGerais"></td>
+                        <td class="celulaMediasGerais"></td>
+                        <td class="celulaMediasGerais"></td>
+                        <td class="celulaMediasGerais"></td>                  
+                     </tr>
+                </table>
+            </section>
+
+
+            <section class="tabela-resultados">
+                <table class="materia-tabela-resultado">
+                    <tr>
+                        <td class="materia-item-resultado">Matéria</td>
+                        <td class="materia-item-resultado">1° Trimestre</td>
+                        <td class="materia-item-resultado">2° Trimestre</td>
+                        <td class="materia-item-resultado">3° Trimestre</td>
+                        <td class="materia-item-resultado">Média</td>
+                        <td class="materia-item-resultado">Soma</td>
+                        <td class="materia-item-resultado">Pontos Para Passar</td>
+                    </tr>
+                    
+                    
+                    
+                    
+                </table>
+            </section>
+
+
+        </div>
+
+
+            
+        </section>
+
+        <section class="notas-form">
+            <h2 class="titulo2">Adicione suas notas</h2>
+           
+        </section> 
+        <div class="fundoDoBotao">
+            <div class="botao-calcular"><button>Calcular</button></div>
+        </div>
+        
+    </main>
+    <script src="./js/variaveis.js"></script>
+    <script src="./js/formulario/desenhaForm.js"></script>
+    <script src="./js/lista/desenhaLista.js"></script>
+    <script src="./js/menu/menu.js"></script>
+    <script src="./js/tabela/desenhaTabela.js"></script>
+    <script src="./js/tabela/realizaDesenhoTabela.js"></script>
+    <script src="./js/formulario/realizadesenhoFormulario.js"></script>
+    <script src="./js/lista/realizaDesenhoDaLista.js"></script>
+</body>
+</html>
