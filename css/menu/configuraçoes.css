@@ -4,6 +4,7 @@
 }
 
 .configuracoes{
+    width: 270px;
     display: inline-block;
     border: 1px solid black;
     box-shadow: 6.9px 8.8px 6.6px black;    
@@ -19,18 +20,18 @@
 }
 .pergunta{
     text-align: center;
-    font-size: 1.2rem;
-    margin: 0.4rem;
+    font-size: 1.1rem;
+    margin: 0.3rem;
 }
 
 .selecionar{
     width: 95%;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0.2rem;
 }
 .media{
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0.2rem;
 
 

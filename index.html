@@ -44,35 +44,35 @@
             <section class="configuracoes">
                 <div class="modulodeDivisoes itemconf">
                     <p class="pergunta">Em qual Formato será organizado o cálculo</p>
-                    <select class="selecionar">
-                        <option value="3">Trimestre</option>
-                        <option value="2">Semestre</option>
-                        <option value="4">Bimestres</option>
+                    <select class="selecionar" id="FormatoDeCalculo">
+                        <option value="Trimestre">Trimestre</option>
+                        <option value="Semestre">Semestre</option>
+                        <option value="Bimestre">Bimestres</option>
                     </select>
                 </div>
                 <div class="modulosCalculados itemconf">
-                    <p class="pergunta">Quantos Trimestres serão calculados</p>
-                    <select class="selecionar">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
+                    <p class="pergunta" id="texto-configuracoes-trimestres-a-ser-calculados">Quantos Trimestres serão calculados</p>
+                    <select class="selecionar" id="TrimestresASeremCalculados">
+                        <option class="quantos" value="1">1</option>
+                        <option value="2" class="quantos">2</option>
+                        <option value="3" class="quantos">3</option>
+                        <option value="4" class="quantos">4</option>
                     </select>
                 </div>
                 <div class="mediaASerAtingida itemconf">
                     <p class="pergunta">Qual é a média miníma a ser atingida</p>
-                    <input class="media" type="tel">
+                    <input class="media" type="tel" id="mediaminima">
                 </div>
-                <div class=" botaoconfigurar">
-                    <button>Confirmar</button>
+                <div class=" botaoconfigurar" >
+                    <button id="configurar">Confirmar</button>
                 </div>
 
 
             </section>
 
-            <section class="mediasGerais">
-                <table class="tabelaMedias">
-                    <tr class="linhaMediasGerais">
+            <section class="mediasGerais" id="mediasGerais">
+                <!-- <table class="tabelaMedias"> -->
+                    <!-- <tr class="linhaMediasGerais">
                         <td class="celulaMediasGerais">Média 1° Trimestre</td>
                         <td class="celulaMediasGerais"></td>
                     </tr>
@@ -92,9 +92,9 @@
                         <td class="celulaMediasGerais">Média Geral</td>
                         <td class="celulaMediasGerais"></td>   
 
-                     </tr>
+                     </tr> -->
 
-                </table>
+                <!-- </table> -->
             </section>
 
 
@@ -140,5 +140,8 @@
     <script src="./js/tabela/realizaDesenhoTabela.js"></script>
     <script src="./js/formulario/realizadesenhoFormulario.js"></script>
     <script src="./js/lista/realizaDesenhoDaLista.js"></script>
+    <script src="./js/calculos/funçoes-dos-calculos/atualizaTabelaMediasGerais.js"></script>
+    <script src="./js/calculos/funçoes-dos-calculos/alteraTextos.js"></script>
+    <script src="./js/calculos/capturaQuesitosParaCalculo.js"></script>
 </body>
 </html>

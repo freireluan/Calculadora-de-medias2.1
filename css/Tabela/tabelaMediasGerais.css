@@ -19,4 +19,11 @@
     padding: 0.4rem;
     border: 1px solid black;
     height: 2rem;
+    width: 100px;
+}
+@media only screen and (max-device-width: 880px){
+    .celulaMediasGerais{
+        width: 150px;
+        margin-left: 17rem;
+    }
 }
