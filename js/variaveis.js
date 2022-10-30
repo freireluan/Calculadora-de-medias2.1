@@ -1,10 +1,12 @@
 const materiasFixas = ["Arte", "Biologia","Edc.Física", "Filosofia","Física","Geografia","História","Português", "Matemática" ,"Química","Sociologia","Edc.Financeira", "Ingles"];
 const tabelaresultados = document.querySelector(".tabela-resultados");
 const tabelaresultadostable = document.querySelector(".materia-tabela-resultado");
+const cabecalhoTabelaconst = document.createElement("tr")
 const listaDeMaterias = document.querySelector(".listaMaterias");
 const configuracoes = document.querySelector(".configuracoes");
 const adicionamateria = document.querySelector(".adicionar-materia");
-
+const atualizacabecalho = document.querySelector("#cabecalho");
+const tabela = document.querySelector("#tabelaresultadostribise");
 
 //para os calculos 
 const divisor = document.querySelector("#FormatoDeCalculo");
@@ -38,3 +40,8 @@ let xDaLista = 0;
 let modulo = "";
 let divisorQuantia = 0;
 let mediaMinima = 0;
+
+
+
+
+

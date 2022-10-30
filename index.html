@@ -45,9 +45,9 @@
                 <div class="modulodeDivisoes itemconf">
                     <p class="pergunta">Em qual Formato será organizado o cálculo</p>
                     <select class="selecionar" id="FormatoDeCalculo">
-                        <option value="Trimestre">Trimestre</option>
-                        <option value="Semestre">Semestre</option>
-                        <option value="Bimestre">Bimestres</option>
+                        <option value="Trimestres">Trimestre</option>
+                        <option value="Semestres">Semestres</option>
+                        <option value="Bimestres">Bimestres</option>
                     </select>
                 </div>
                 <div class="modulosCalculados itemconf">
@@ -71,44 +71,21 @@
             </section>
 
             <section class="mediasGerais" id="mediasGerais">
-                <!-- <table class="tabelaMedias"> -->
-                    <!-- <tr class="linhaMediasGerais">
-                        <td class="celulaMediasGerais">Média 1° Trimestre</td>
-                        <td class="celulaMediasGerais"></td>
-                    </tr>
-                    <tr class="linhaMediasGerais">
-                        <td class="celulaMediasGerais">Média 2° Trimestre</td>
-                        <td class="celulaMediasGerais"></td>
-                        
-                        
-                                       
-                     </tr>
-                     <tr class="linhaMediasGerais">
-                        <td class="celulaMediasGerais">Média 3° Trimestre</td>
-                        <td class="celulaMediasGerais"></td>
-
-                     </tr>
-                     <tr class="linhaMediasGerais">
-                        <td class="celulaMediasGerais">Média Geral</td>
-                        <td class="celulaMediasGerais"></td>   
-
-                     </tr> -->
-
-                <!-- </table> -->
+                
             </section>
 
 
             <section class="tabela-resultados">
+                
                 <table class="materia-tabela-resultado">
-                    <tr>
-                        <td class="materia-item-resultado">Matéria</td>
-                        <td class="materia-item-resultado">1° Trimestre</td>
-                        <td class="materia-item-resultado">2° Trimestre</td>
-                        <td class="materia-item-resultado">3° Trimestre</td>
-                        <td class="materia-item-resultado">Média</td>
-                        <td class="materia-item-resultado">Soma</td>
-                        <td class="materia-item-resultado">Pontos Para Passar</td>
-                    </tr>
+                   
+                        <!-- <tr id="cabecalho">
+                           
+                        </tr> -->
+                        
+                    
+                    
+                     
                     
                     
                     
@@ -133,6 +110,12 @@
         
     </main>
     <script src="./js/variaveis.js"></script>
+    <script src="./js/tabela/atualiza-tabela/funcoes/atualizaTrimestre.js"></script>
+    <script src="./js/calculos/funçoes-dos-calculos/alteraTextos.js"></script>
+    <script src="./js/calculos/funçoes-dos-calculos/atualizacoes/atualizabimestres.js"></script>
+    <script src="./js/calculos/funçoes-dos-calculos/atualizacoes/atualizaSemestre.js"></script>
+    <script src="./js/calculos/funçoes-dos-calculos/atualizacoes/AtualizaTrimestres.js"></script>
+    <script src="./js/tabela/atualiza-tabela/atualizaTabela.js"></script>
     <script src="./js/formulario/desenhaForm.js"></script>
     <script src="./js/lista/desenhaLista.js"></script>
     <script src="./js/menu/menu.js"></script>
@@ -140,8 +123,11 @@
     <script src="./js/tabela/realizaDesenhoTabela.js"></script>
     <script src="./js/formulario/realizadesenhoFormulario.js"></script>
     <script src="./js/lista/realizaDesenhoDaLista.js"></script>
+
+
+
     <script src="./js/calculos/funçoes-dos-calculos/atualizaTabelaMediasGerais.js"></script>
-    <script src="./js/calculos/funçoes-dos-calculos/alteraTextos.js"></script>
+    
     <script src="./js/calculos/capturaQuesitosParaCalculo.js"></script>
 </body>
 </html>

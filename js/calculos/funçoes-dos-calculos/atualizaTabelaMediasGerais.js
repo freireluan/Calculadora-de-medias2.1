@@ -17,10 +17,12 @@ function atualizaTabelamediasGerais(divisor){
 
 
 
-function desenhaTabela(){
+function desenhaTabela(divisor,divisorcalculado,mediasgeraiselementopai){
     const tabelaGeral = document.createElement("table");
     tabelaGeral.classList.add("tabelaMedias");
     tabelaGeral.innerHTML = `
+    
+
     <tr class="linhaMediasGerais">
         <td class="celulaMediasGerais">Média 1° Trimestre</td>
         <td class="celulaMediasGerais"></td>
@@ -38,7 +40,7 @@ function desenhaTabela(){
         <td class="celulaMediasGerais"></td>   
     </tr>
     `
-    mediasgeraiselementopai.appendChild(tabelaGeral);
+    atualizaTabela(divisor,divisorcalculado,tabelaGeral,mediasgeraiselementopai)
 
 
 
@@ -46,4 +48,32 @@ function desenhaTabela(){
         
 }
 
-desenhaTabela();
+
+
+function atualizaTabela(divisor,divisorcalculado,tabelaGeral,mediasgeraiselementopai){
+    mediasgeraiselementopai.innerHTML = "";
+    
+     if(divisor == "Trimestres"){
+         verificaTrimestres(divisorcalculado,tabelaGeral,mediasgeraiselementopai);
+     }
+     if(divisor == "Bimestres"){
+          verificaBimestres(divisorcalculado,tabelaGeral,mediasgeraiselementopai);
+      }
+     if(divisor == "Semestres"){
+          verificaSemestres(divisorcalculado,tabelaGeral,mediasgeraiselementopai);
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

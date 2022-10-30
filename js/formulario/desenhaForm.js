@@ -1,23 +1,23 @@
-function criaCardsForms(materia,trimestres){
+function criaCardsForms(materia,trimestres,formato){
+    
     let x = 1;
     const divpai = document.querySelector(".notas-form");
     const sectionp = document.createElement("div");
     sectionp.classList.add("form-notas-card"); 
     // sectionp.classList.add(`${materia}form`)
+    if (xformulario == 0){
 
-    sectionp.innerHTML = `
+    divpai.innerHTML = "";
+    }
 
-        
+    if(trimestres == "1"){
+        sectionp.innerHTML = `
         <header>
             <h3>${materia}</h3>
         </header>
             <main class="conteudo-form">
                 <form action="" class="formulario-de-notas">
-                     <p class="titulo-trimestre">${trimestres - 2}° Trimestre</p>
-                     <input type="tel" class="input-nota valortrimestre${trimestres - 2}de${materia}">
-                     <p class="titulo-trimestre">${trimestres - 1}° Trimestre</p>
-                     <input type="tel" class="input-nota valortrimestre${trimestres - 1}de${materia}">
-                     <p class="titulo-trimestre">${trimestres}° Trimestre</p>
+                     <p class="titulo-trimestre">${trimestres}° ${formato}</p>
                      <input type="tel" class="input-nota valortrimestre${trimestres}de${materia}"></form>
              </main>
       
@@ -27,6 +27,79 @@ function criaCardsForms(materia,trimestres){
     divpai.appendChild(sectionp);
 
 
+
+    }
+    if(trimestres == "2"){
+        sectionp.innerHTML = `
+        <header>
+            <h3>${materia}</h3>
+        </header>
+            <main class="conteudo-form">
+                <form action="" class="formulario-de-notas">
+                     
+                     <p class="titulo-trimestre">${trimestres - 1}° ${formato}</p>
+                     <input type="tel" class="input-nota valortrimestre${trimestres - 1}de${materia}">
+                     <p class="titulo-trimestre">${trimestres}° ${formato}</p>
+                     <input type="tel" class="input-nota valortrimestre${trimestres}de${materia}"></form>
+             </main>
+      
+        
+    `
+
+    divpai.appendChild(sectionp);
+
+
+
+    }
+    if(trimestres == "3"){
+        sectionp.innerHTML = `
+        <header>
+            <h3>${materia}</h3>
+        </header>
+            <main class="conteudo-form">
+                <form action="" class="formulario-de-notas">
+                     <p class="titulo-trimestre">${trimestres - 2}° ${formato}</p>
+                     <input type="tel" class="input-nota valortrimestre${trimestres - 2}de${materia}">
+                     <p class="titulo-trimestre">${trimestres - 1}° ${formato}</p>
+                     <input type="tel" class="input-nota valortrimestre${trimestres - 1}de${materia}">
+                     <p class="titulo-trimestre">${trimestres}° ${formato}</p>
+                     <input type="tel" class="input-nota valortrimestre${trimestres}de${materia}"></form>
+             </main>
+      
+        
+    `
+
+    divpai.appendChild(sectionp);
+
+
+
+    }
+    if (trimestres == "4") {
+        sectionp.innerHTML = `
+        <header>
+            <h3>${materia}</h3>
+        </header>
+            <main class="conteudo-form">
+                <form action="" class="formulario-de-notas">
+                     <p class="titulo-trimestre">${trimestres - 3}° ${formato}</p>
+                     <input type="tel" class="input-nota valortrimestre${trimestres - 3}de${materia}">
+                     <p class="titulo-trimestre">${trimestres - 2}° ${formato}</p>
+                     <input type="tel" class="input-nota valortrimestre${trimestres - 2}de${materia}">
+                     <p class="titulo-trimestre">${trimestres - 1}° ${formato}</p>
+                     <input type="tel" class="input-nota valortrimestre${trimestres - 1}de${materia}">
+                     <p class="titulo-trimestre">${trimestres}° ${formato}</p>
+                     <input type="tel" class="input-nota valortrimestre${trimestres}de${materia}"></form>
+             </main>
+      
+        
+    `
+
+    divpai.appendChild(sectionp);
+
+
+    }
+
+    
 
 
 
