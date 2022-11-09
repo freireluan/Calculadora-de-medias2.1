@@ -1,21 +1,3 @@
-function atualizaTabelamediasGerais(divisor){
-
-
-    if(divisor.value == "Trimestre"){
-       
-    }
-    if(divisor.value == "Bimestre"){
-       
-    }
-    if(divisor.value == "Semestre"){
-       
-    }
-
-}
-
-
-
-
 
 function desenhaTabela(divisor,divisorcalculado,mediasgeraiselementopai){
     const tabelaGeral = document.createElement("table");

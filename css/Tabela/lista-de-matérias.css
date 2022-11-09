@@ -2,7 +2,7 @@ body{
     background-color: rgba(215, 215,215, 0.6)
 }
 .materia-item {
-    width: 250px;
+    width: 200px;
     display: inline-block;
     padding:0.1rem;
     font-size: 1.1rem;

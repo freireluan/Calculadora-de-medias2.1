@@ -1,4 +1,4 @@
-function criaCardsForms(materia,trimestres,formato){
+function criaCardsForms(materia,trimestres,formato,xformulario){
     
     let x = 1;
     const divpai = document.querySelector(".notas-form");

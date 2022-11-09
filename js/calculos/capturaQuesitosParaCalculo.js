@@ -13,24 +13,24 @@ divisor.addEventListener("click", ()=>{
     
     alteraTextoConfiguracao(divisor);
     
-    if(xtabela >= materiasFixas.length){
+    if(xtabela >= materiaASeremDesenhadas.length){
         xtabela = 0;
     }
-    if(xformulario >= materiasFixas.length){
+    if(xformulario >= materiaASeremDesenhadas.length){
         xformulario = 0;
     }
 
     
     
-    materiasFixas.forEach(() => {
-        criaTabela(materiasFixas[xtabela],tabelaresultadostable,tribise.value,divisor.value,xtabela);
+    materiaASeremDesenhadas.forEach(() => {
+        criaTabela(materiaASeremDesenhadas[xtabela],tabelaresultadostable,tribise.value,divisor.value,xtabela);
     
     
         xtabela++;
         
     });   
-    materiasFixas.forEach(() => {
-        criaCardsForms(materiasFixas[xformulario],tribise.value,divisor.value)
+    materiaASeremDesenhadas.forEach(() => {
+        criaCardsForms(materiaASeremDesenhadas[xformulario],tribise.value,divisor.value,xformulario)
     
     
         xformulario++;
@@ -58,24 +58,24 @@ tribise.addEventListener("click",()=>{
    
 
             
-    if(xtabela >= materiasFixas.length){
+    if(xtabela >= materiaASeremDesenhadas.length){
         xtabela = 0;
     }
-    if(xformulario >= materiasFixas.length){
+    if(xformulario >= materiaASeremDesenhadas.length){
         xformulario = 0;
     }
 
-    materiasFixas.forEach(() => {
+    materiaASeremDesenhadas.forEach(() => {
       
             
     
-        criaTabela(materiasFixas[xtabela],tabelaresultadostable,tribise.value,divisor.value,xtabela);
+        criaTabela(materiaASeremDesenhadas[xtabela],tabelaresultadostable,tribise.value,divisor.value,xtabela);
     
         xtabela++;
         
     });
-    materiasFixas.forEach(() => {
-        criaCardsForms(materiasFixas[xformulario],tribise.value,divisor.value)
+    materiaASeremDesenhadas.forEach(() => {
+        criaCardsForms(materiaASeremDesenhadas[xformulario],tribise.value,divisor.value,xformulario)
     
     
         xformulario++;
