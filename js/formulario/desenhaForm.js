@@ -10,7 +10,7 @@ function criaCardsForms(materia,trimestres,formato,xformulario){
     divpai.innerHTML = "";
     }
 
-    if(trimestres == "1"){
+    if(trimestres == "1" || trimestres == 1){
         sectionp.innerHTML = `
         <header>
             <h3>${materia}</h3>
@@ -18,7 +18,7 @@ function criaCardsForms(materia,trimestres,formato,xformulario){
             <main class="conteudo-form">
                 <form action="" class="formulario-de-notas">
                      <p class="titulo-trimestre">${trimestres}° ${formato}</p>
-                     <input type="tel" class="input-nota valortrimestre${trimestres}de${materia}"></form>
+                     <input type="tel" class="input-nota valor${formato}${trimestres}de${materia}"></form>
              </main>
       
         
@@ -29,7 +29,7 @@ function criaCardsForms(materia,trimestres,formato,xformulario){
 
 
     }
-    if(trimestres == "2"){
+    if(trimestres == "2" || trimestres == 2){
         sectionp.innerHTML = `
         <header>
             <h3>${materia}</h3>
@@ -38,9 +38,9 @@ function criaCardsForms(materia,trimestres,formato,xformulario){
                 <form action="" class="formulario-de-notas">
                      
                      <p class="titulo-trimestre">${trimestres - 1}° ${formato}</p>
-                     <input type="tel" class="input-nota valortrimestre${trimestres - 1}de${materia}">
+                     <input type="tel" class="input-nota valor${formato}${trimestres - 1}de${materia}">
                      <p class="titulo-trimestre">${trimestres}° ${formato}</p>
-                     <input type="tel" class="input-nota valortrimestre${trimestres}de${materia}"></form>
+                     <input type="tel" class="input-nota valor${formato}${trimestres}de${materia}"></form>
              </main>
       
         
@@ -51,7 +51,7 @@ function criaCardsForms(materia,trimestres,formato,xformulario){
 
 
     }
-    if(trimestres == "3"){
+    if(trimestres == "3" || trimestres == 3){
         sectionp.innerHTML = `
         <header>
             <h3>${materia}</h3>
@@ -59,11 +59,11 @@ function criaCardsForms(materia,trimestres,formato,xformulario){
             <main class="conteudo-form">
                 <form action="" class="formulario-de-notas">
                      <p class="titulo-trimestre">${trimestres - 2}° ${formato}</p>
-                     <input type="tel" class="input-nota valortrimestre${trimestres - 2}de${materia}">
+                     <input type="tel" class="input-nota valor${formato}${trimestres - 2}de${materia}">
                      <p class="titulo-trimestre">${trimestres - 1}° ${formato}</p>
-                     <input type="tel" class="input-nota valortrimestre${trimestres - 1}de${materia}">
+                     <input type="tel" class="input-nota valor${formato}${trimestres - 1}de${materia}">
                      <p class="titulo-trimestre">${trimestres}° ${formato}</p>
-                     <input type="tel" class="input-nota valortrimestre${trimestres}de${materia}"></form>
+                     <input type="tel" class="input-nota valor${formato}${trimestres}de${materia}"></form>
              </main>
       
         
@@ -74,7 +74,7 @@ function criaCardsForms(materia,trimestres,formato,xformulario){
 
 
     }
-    if (trimestres == "4") {
+    if (trimestres == "4" || trimestres == 4 ) {
         sectionp.innerHTML = `
         <header>
             <h3>${materia}</h3>
@@ -82,13 +82,13 @@ function criaCardsForms(materia,trimestres,formato,xformulario){
             <main class="conteudo-form">
                 <form action="" class="formulario-de-notas">
                      <p class="titulo-trimestre">${trimestres - 3}° ${formato}</p>
-                     <input type="tel" class="input-nota valortrimestre${trimestres - 3}de${materia}">
+                     <input type="tel" class="input-nota valor${formato}${trimestres - 3}de${materia}">
                      <p class="titulo-trimestre">${trimestres - 2}° ${formato}</p>
-                     <input type="tel" class="input-nota valortrimestre${trimestres - 2}de${materia}">
+                     <input type="tel" class="input-nota valor${formato}${trimestres - 2}de${materia}">
                      <p class="titulo-trimestre">${trimestres - 1}° ${formato}</p>
-                     <input type="tel" class="input-nota valortrimestre${trimestres - 1}de${materia}">
+                     <input type="tel" class="input-nota valor${formato}${trimestres - 1}de${materia}">
                      <p class="titulo-trimestre">${trimestres}° ${formato}</p>
-                     <input type="tel" class="input-nota valortrimestre${trimestres}de${materia}"></form>
+                     <input type="tel" class="input-nota valor${formato}${trimestres}de${materia}"></form>
              </main>
       
         

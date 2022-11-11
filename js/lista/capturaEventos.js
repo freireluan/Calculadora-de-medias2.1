@@ -1,6 +1,8 @@
 const checkListaDeMaterias = document.querySelectorAll(".checkbox-materia");
+materiaASeremDesenhadas = materiasFixas;
 checkListaDeMaterias.forEach((index)=> {
     index.addEventListener("click",()=>{
+        
         // console.log(index.checked,index.parentNode.querySelector("h4").textContent);
         if(index.checked == true){
             materiaASeremDesenhadas.push(index.parentNode.querySelector("h4").textContent)
@@ -19,7 +21,7 @@ checkListaDeMaterias.forEach((index)=> {
        
     })
     
-    
+    return materiaASeremDesenhadas;
 });
 
 

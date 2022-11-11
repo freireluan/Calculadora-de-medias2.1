@@ -20,6 +20,8 @@ divisor.addEventListener("click", ()=>{
         xformulario = 0;
     }
 
+   console.log(materiaASeremDesenhadas)
+
     
     
     materiaASeremDesenhadas.forEach(() => {
@@ -64,8 +66,11 @@ tribise.addEventListener("click",()=>{
     if(xformulario >= materiaASeremDesenhadas.length){
         xformulario = 0;
     }
+    
 
     materiaASeremDesenhadas.forEach(() => {
+       
+        
       
             
     

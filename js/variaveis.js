@@ -1,5 +1,6 @@
 const materiasFixas = ["Arte", "Biologia","Edc.Física", "Filosofia","Física","Geografia","História","Português", "Matemática" ,"Química","Sociologia","Edc.Financeira", "Ingles"];
 // const materiasFixas = ["Artes","Biologia","Edc.Física"];
+const materiaslista = document.querySelectorAll(".checkbox-materia");
 const tabelaresultados = document.querySelector(".tabela-resultados");
 const tabelaresultadostable = document.querySelector(".materia-tabela-resultado");
 const cabecalhoTabelaconst = document.createElement("tr")
@@ -49,6 +50,12 @@ let mediaMinima = 0;
 let materiaASeremDesenhadas = [];
 
 
+
+//notas
+let nota1 = "";
+let nota2 = "";
+let nota3 = "";
+let nota4 = "";
 
 
 
