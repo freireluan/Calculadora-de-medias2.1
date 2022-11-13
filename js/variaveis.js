@@ -1,5 +1,5 @@
-const materiasFixas = ["Arte", "Biologia","Edc.Física", "Filosofia","Física","Geografia","História","Português", "Matemática" ,"Química","Sociologia","Edc.Financeira", "Ingles"];
-// const materiasFixas = ["Artes","Biologia","Edc.Física"];
+// const materiasFixas = ["Arte", "Biologia","Edcucação-Física", "Filosofia","Física","Geografia","História","Português", "Matemática" ,"Química","Sociologia","Edcucação-Financeira", "Ingles"];
+const materiasFixas = ["Artes","Biologia"];
 const materiaslista = document.querySelectorAll(".checkbox-materia");
 const tabelaresultados = document.querySelector(".tabela-resultados");
 const tabelaresultadostable = document.querySelector(".materia-tabela-resultado");
@@ -15,7 +15,7 @@ const botaocalcular = document.querySelector(".botao-calcular");
 //para os calculos 
 const divisor = document.querySelector("#FormatoDeCalculo");
 const tribise = document.querySelector("#TrimestresASeremCalculados");
-const media = document.querySelector("#mediaminima");
+const mediaminima = document.querySelector("#mediaminima");
 const numneroASerCalculado = document.querySelectorAll(".quantos");
 
 //animações das configurações
@@ -56,6 +56,9 @@ let nota1 = "";
 let nota2 = "";
 let nota3 = "";
 let nota4 = "";
+let media = "";
+let soma = "";
+let pontosParaPassar = "";
 
 
 

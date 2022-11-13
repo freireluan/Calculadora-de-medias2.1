@@ -35,13 +35,13 @@ function desenhaTabela(divisor,divisorcalculado,mediasgeraiselementopai){
 function atualizaTabela(divisor,divisorcalculado,tabelaGeral,mediasgeraiselementopai){
     mediasgeraiselementopai.innerHTML = "";
     
-     if(divisor == "Trimestres"){
+     if(divisor == "Trimestre"){
          verificaTrimestres(divisorcalculado,tabelaGeral,mediasgeraiselementopai);
      }
-     if(divisor == "Bimestres"){
+     if(divisor == "Bimestre"){
           verificaBimestres(divisorcalculado,tabelaGeral,mediasgeraiselementopai);
       }
-     if(divisor == "Semestres"){
+     if(divisor == "Semestre"){
           verificaSemestres(divisorcalculado,tabelaGeral,mediasgeraiselementopai);
     }
 

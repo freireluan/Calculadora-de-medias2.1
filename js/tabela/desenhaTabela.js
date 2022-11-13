@@ -1,6 +1,6 @@
 function criaTabela(materia,tabela,divisorASeremCalculados,modo,xtabela){
     let tr = document.createElement("tr");
-    console.log(divisorASeremCalculados);
+    
     if(materia == "undefined" || materia == undefined){
         console.log("Erro")
 
@@ -34,7 +34,7 @@ function criaTabela(materia,tabela,divisorASeremCalculados,modo,xtabela){
             <td class="materia-item-resultado titulo${materia}">${materia}</td>
             <td class="materia-item-resultado primeiro${modo}${materia}"></td>
             <td class="materia-item-resultado segundo${modo}${materia}"></td>
-            <td class="materia-item-resultado teceiro${modo}${materia}"></td>   
+            <td class="materia-item-resultado terceiro${modo}${materia}"></td>   
             <td class="materia-item-resultado mediaDos${modo}em${materia}"></td>
             <td class="materia-item-resultado soma${materia}"></td>
             <td class="materia-item-resultado pontosParaPassarem${materia}"></td>
