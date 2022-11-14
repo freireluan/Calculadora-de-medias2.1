@@ -59,6 +59,22 @@ let nota4 = "";
 let media = "";
 let soma = "";
 let pontosParaPassar = "";
+let v1 = 0;
+let v2 = 0;
+let v3 = 0;
+let v4 = 0;
+
+
+
+
+
+
+
+
+
+
+
+let xizinho = 0;
 
 
 

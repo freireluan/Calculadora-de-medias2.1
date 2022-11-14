@@ -1,4 +1,5 @@
 function criarmazenamento(materia , quantia , formato ){
+    
    
 
     
@@ -43,34 +44,34 @@ function criarmazenamento(materia , quantia , formato ){
     }
     if(quantia == 4 || quantia =="4"){
         materiaNotas = {
-            primeiro :nota1 ,
+            primeiro : nota1 ,
             segundo : nota2,
-            terceiro: nota3,
-            quarto: nota4
+            terceiro : nota3,
+            quarto : nota4
       //      pontosParaPassar:""
         }
 
     }
     if(quantia == 3 || quantia =="3"){
         materiaNotas = {
-            primeiro :nota1 ,
-            segundo:nota2,
-            terceiro:nota3
+            primeiro : nota1 ,
+            segundo : nota2,
+            terceiro : nota3
             //pontosParaPassar:""
         }
 
     }
     if(quantia == 2 || quantia =="2"){
         materiaNotas = {
-            primeiro :nota1,
-            segundo:nota2
+            primeiro : nota1,
+            segundo : nota2
             //pontosParaPassar:""
         }
 
     }
     if(quantia == 1 || quantia =="1"){
         materiaNotas = {
-            primeiro :nota1
+            primeiro : nota1
             //pontosParaPassar:""
            
         }
@@ -103,16 +104,30 @@ function criarmazenamento(materia , quantia , formato ){
         JSON.parse(localStorage.getItem(`${materia}${formato}`)).segundo,
         JSON.parse(localStorage.getItem(`${materia}${formato}`)).terceiro,
         JSON.parse(localStorage.getItem(`${materia}${formato}`)).quarto,
-        mediaminima.value)
+        mediaminima.value);
 
-        
+
+
+
+    if(xizinho >= materiaASeremDesenhadas.length){
+        xizinho = 0;
+    }
+
+
+
+    calculaMediasGerais(
+    JSON.parse(localStorage.getItem(`${materia}${formato}`)).primeiro
+    ,JSON.parse(localStorage.getItem(`${materia}${formato}`)).segundo
+    , JSON.parse(localStorage.getItem(`${materia}${formato}`)).terceiro
+    ,JSON.parse(localStorage.getItem(`${materia}${formato}`)).quarto
+    ,quantia,v1,v2,v3,v4,materiaASeremDesenhadas.length,xizinho);
+    xizinho++;
+
+    
+
 
 
 }
-
-
-
-
 
 
 

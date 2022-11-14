@@ -31,15 +31,15 @@ function verificaBimestres(divisorcalculado,tabelaGeral,mediasgeraiselementopai)
             tabelaGeral.innerHTML = ` 
             <tr class="linhaMediasGerais">
                 <td class="celulaMediasGerais ">Média 1° Bimestre</td>
-                <td class="celulaMediasGerais media${divisorcalculado - 2}Bimestre"></td>
+                <td class="celulaMediasGerais media${divisorcalculado - 2}"></td>
             </tr>
             <tr class="linhaMediasGerais">
                 <td class="celulaMediasGerais">Média 2° Bimestre</td>
-                <td class="celulaMediasGeraismedia${divisorcalculado - 1 }Bimestre"></td>            
+                <td class="celulaMediasGerais media${divisorcalculado - 1 }"></td>            
             </tr>
             <tr class="linhaMediasGerais">
                 <td class="celulaMediasGerais">Média 3° Bimestre</td>
-                <td class="celulaMediasGerais media${divisorcalculado}Bimestre"></td>
+                <td class="celulaMediasGerais media${divisorcalculado}"></td>
             </tr>
             <tr class="linhaMediasGerais">
                 <td class="celulaMediasGerais">Média Geral</td>
@@ -75,10 +75,11 @@ function verificaBimestres(divisorcalculado,tabelaGeral,mediasgeraiselementopai)
                     </tr>
                     <tr class="linhaMediasGerais">
                         <td class="celulaMediasGerais">Média Geral</td>
-                        <td class="celulaMediasGerais mediageralBimestral"></td>   
+                        <td class="celulaMediasGerais mediageral"></td>   
                     </tr>
                 `
                
             }
+            console.log(divisorcalculado)
             mediasgeraiselementopai.appendChild(tabelaGeral);
  }

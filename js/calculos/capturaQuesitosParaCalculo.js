@@ -1,3 +1,4 @@
+// console.log(divisor,tribise,media,confirmaConfiguraoes);
 desenhaTabela(divisor.value,tribise.value,mediasgeraiselementopai);
 confirmaConfiguraoes.addEventListener("click", ()=>{
     
@@ -154,12 +155,18 @@ botaocalcular.addEventListener("click",(xtabela)=>{
         xtabela = 0;
     }
     materiaASeremDesenhadas.forEach((index)=>{
-        criarmazenamento(index , tribise.value , divisor.value )
+        criarmazenamento(index , tribise.value , divisor.value)
         xtabela++;
 
     })
     
 })
+
+
+
+
+
+
 
 
 
