@@ -22,7 +22,7 @@ function desenhaTabela(divisor,divisorcalculado,mediasgeraiselementopai){
         <td class="celulaMediasGerais"></td>   
     </tr>
     `
-    atualizaTabela(divisor,divisorcalculado,tabelaGeral,mediasgeraiselementopai)
+    atualizaTabelaMediasGerais(divisor,divisorcalculado,tabelaGeral,mediasgeraiselementopai);
 
 
 

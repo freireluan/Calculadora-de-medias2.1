@@ -55,6 +55,8 @@ divisor.addEventListener("click", ()=>{
    
    
      tabelaresultadostable.innerHTML = "";
+
+     desenhaTabela(divisor.value,tribise.value,mediasgeraiselementopai);
         
     
     alteraTextoConfiguracao(divisor);
@@ -155,15 +157,19 @@ botaocalcular.addEventListener("click",(xtabela)=>{
         xtabela = 0;
     }
     materiaASeremDesenhadas.forEach((index)=>{
-        criarmazenamento(index , tribise.value , divisor.value)
+        criarmazenamento(index , tribise.value , divisor.value);
+        calculaMediaGerais(JSON.parse(
+            localStorage.getItem("v1")),
+            JSON.parse(localStorage.getItem("v2")),
+            JSON.parse(localStorage.getItem("v3")),
+            JSON.parse(localStorage.getItem("v4")),
+            tribise.value, materiaASeremDesenhadas.length);
+        
         xtabela++;
 
     })
     
 })
-
-
-
 
 
 

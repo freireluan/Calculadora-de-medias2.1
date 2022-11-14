@@ -1,6 +1,5 @@
 
 
-
 function calculaMediasGerais(n1,n2,n3,n4,quantia,v1,v2,v3,v4,array,x){
     if(x == 0 || x == "0"){
         localStorage.setItem("v1" , JSON.stringify(v1));
@@ -52,7 +51,8 @@ function calculamediaPrimeiro(n1,v1,materias,x){
         v1 = v1 + n1;
         localStorage.setItem("v1" , JSON.stringify(v1))
         if((x + 1) == materias){
-            console.log(`A media v1 foi de ${v1 / materias}`)
+            
+            document.querySelector(`#media${1}`).textContent = (v1 / materias).toFixed(1);
         }
         
         
@@ -69,7 +69,7 @@ function calculamediaSegundo(n2,v2,materias,x){
     v2 = v2 + n2;
     localStorage.setItem("v2" , JSON.stringify(v2))
     if((x + 1) == materias){
-        console.log(`A media v2 foi de ${v2 / materias}`)
+        document.querySelector(`#media${2}`).textContent = (v2 / materias).toFixed(1);
     }
     
 }
@@ -82,7 +82,7 @@ function calculamediaTerceiro(n3,v3,materias,x){
     v3 = v3 + n3;
     localStorage.setItem("v3" , JSON.stringify(v3))
     if((x + 1) == materias){
-        console.log(`A media v3 foi de ${v3 / materias}`)
+        document.querySelector(`#media${3}`).textContent = (v3 / materias).toFixed(1);
     }
     
 }
@@ -98,7 +98,38 @@ function calculamediaQuarto(n4,v4,materias,x){
     v4 = v4 + n4;
     localStorage.setItem("v4" , JSON.stringify(v4))
     if((x + 1) == materias){
-        console.log(`A media v4 foi de ${v4  / materias}`)
+        document.querySelector(`#media${4}`).textContent = (v4 / materias).toFixed(1);
+    }
+    
+}
+
+
+function calculaMediaGerais(v1,v2,v3,v4,quantia,materias){
+    quantia = parseInt(quantia);
+    if(quantia == 4 || quantia=="4"){
+        v4 = parseInt(v4);
+        v3 = parseInt(v3);
+        v2 = parseInt(v2);
+        v1 = parseInt(v1);
+        document.querySelector("#mediaGeral").textContent = (((v4 + v3 + v2 + v1) / materias)/quantia).toFixed(1);
+    }
+    if(quantia == 3 || quantia=="3"){
+        
+        v3 = parseInt(v3);
+        v2 = parseInt(v2);
+        v1 = parseInt(v1);
+        document.querySelector("#mediaGeral").textContent = (( (v3 + v2 + v1) / materias)/quantia).toFixed(1);
+    }
+    if(quantia == 2 || quantia=="2"){
+        
+        v2 = parseInt(v2);
+        v1 = parseInt(v1);
+        document.querySelector("#mediaGeral").textContent = (( (v2 + v1) / materias)/quantia).toFixed(1);
+    }
+    if(quantia == 1 || quantia=="1"){
+   
+        v1 = parseInt(v1);
+        document.querySelector("#mediaGeral").textContent = ((v1 / materias)/quantia).toFixed(1);
     }
     
 }
