@@ -1,5 +1,4 @@
-// console.log(divisor,tribise,media,confirmaConfiguraoes);
-
+desenhaTabela(divisor.value,tribise.value,mediasgeraiselementopai);
 confirmaConfiguraoes.addEventListener("click", ()=>{
     
     tabelaresultadostable.innerHTML = "";
