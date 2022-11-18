@@ -90,6 +90,15 @@ materiasFixas.forEach(() => {
 
 
 
+botaoImportar.addEventListener("click", ()=>{
+    localStorage.setItem("materiasASeremDesenhadas",[]);
+    localStorage.setItem("materiasASeremDesenhadas",JSON.stringify(materiasFixas) )
+    console.log(localStorage.getItem("materiasASeremDesenhadas"));
+});
+
+
+
+
 
 
 
