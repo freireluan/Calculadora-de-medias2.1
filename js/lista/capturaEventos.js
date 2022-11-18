@@ -1,7 +1,12 @@
-const checkListaDeMaterias = document.querySelectorAll(".checkbox-materia");
-materiaASeremDesenhadas = materiasFixas;
+
+setTimeout(() => {
+    
+    const checkListaDeMaterias = document.querySelectorAll(".checkbox-materia");
+
 checkListaDeMaterias.forEach((index)=> {
     index.addEventListener("click",()=>{
+        
+        
         
         // console.log(index.checked,index.parentNode.querySelector("h4").textContent);
         if(index.checked == true){
@@ -14,15 +19,22 @@ checkListaDeMaterias.forEach((index)=> {
                 ,
                 1)
         }
+        console.log(materiaASeremDesenhadas)
+        salvaMaterias();
+        
         redesenhaTabelaEFormulario(materiaASeremDesenhadas, xtabela ,xformulario);
+        
 
 
         
        
     })
     
+   
     return materiaASeremDesenhadas;
 });
+    
+}, 45);
 
 
 

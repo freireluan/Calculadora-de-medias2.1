@@ -1,12 +1,31 @@
-function desenhaLista(materia){
+function desenhaLista(materia,array){
     const itemdaLista = document.createElement("div");
    
 
     itemdaLista.innerHTML = `
         <h4 class="materiaDaListaTitulo listaDemateriasElemento${materia}">${materia}</h4>
-        <input type="checkbox" id=" checkboxDaMateriaDe${materia}" class="checkbox-materia" checked>
+        <input type="checkbox" id="checkboxDaMateriaDe${materia}" class="checkbox-materia" >
         
     `
+    setTimeout(() => {
+        if(array.includes(materia) == true){
+            
+            document.querySelector(`#checkboxDaMateriaDe${materia}`).checked = true;
+        }else{
+            if(array.includes(materia) == false || array.includes(materia) == null){
+                
+                document.querySelector(`#checkboxDaMateriaDe${materia}`).checked = false;
+            }
+           
+        }
+        
+    }, 800);
+
+    
+
+
+
+
     listaDeMaterias.appendChild(itemdaLista);
     itemdaLista.classList.add("materia-item");
     itemdaLista.classList.add(`ItemDaLista${materia}`);

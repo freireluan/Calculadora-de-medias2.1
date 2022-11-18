@@ -1,4 +1,5 @@
-materiasFixas.forEach(() => {
-    desenhaLista(materiasFixas[xDaLista]);
-    xDaLista++;
-})
+
+// materiasFixas.forEach(() => {
+//     desenhaLista(materiasFixas[xDaLista],materiaRecaregaveis);
+//     xDaLista++;
+// })

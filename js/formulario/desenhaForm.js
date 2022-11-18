@@ -9,95 +9,108 @@ function criaCardsForms(materia,trimestres,formato,xformulario){
 
     divpai.innerHTML = "";
     }
+    
+    alteraTextos(materia , (trimestres) , formato);
+    // console.log(JSON.parse(localStorage.getItem(`${materia}${formato}`)).primeiro);
+    // console.log(JSON.parse(localStorage.getItem(`${materia}${formato}`)).segundo);
+    // console.log(JSON.parse(localStorage.getItem(`${materia}${formato}`)).terceiro);
+    // console.log(JSON.parse(localStorage.getItem(`${materia}${formato}`)) .quarto);
+   
+    if(materia == undefined || materia == "undefined"){
 
-    if(trimestres == "1" || trimestres == 1){
-        sectionp.innerHTML = `
-        <header>
-            <h3>${materia}</h3>
-        </header>
-            <main class="conteudo-form">
-                <form action="" class="formulario-de-notas">
-                     <p class="titulo-trimestre">${trimestres}° ${formato}</p>
-                     <input type="tel" class="input-nota valor${formato}${trimestres}de${materia}"></form>
-             </main>
-      
-        
-    `
-
-    divpai.appendChild(sectionp);
-
-
+    }else{
+        if(trimestres == "1" || trimestres == 1){
+            sectionp.innerHTML = `
+            <header>
+                <h3>${materia}</h3>
+            </header>
+                <main class="conteudo-form">
+                    <form action="" class="formulario-de-notas">
+                         <p class="titulo-trimestre">${trimestres}° ${formato}</p>
+                         <input type="tel" class="input-nota valor${formato}${trimestres}de${materia}"></form>
+                 </main>
+          
+            
+        `
+    
+        divpai.appendChild(sectionp);
+    
+    
+    
+        }
+        if(trimestres == "2" || trimestres == 2){
+            sectionp.innerHTML = `
+            <header>
+                <h3>${materia}</h3>
+            </header>
+                <main class="conteudo-form">
+                    <form action="" class="formulario-de-notas">
+                         
+                         <p class="titulo-trimestre">${trimestres - 1}° ${formato}</p>
+                         <input type="tel" class="input-nota valor${formato}${trimestres - 1}de${materia}">
+                         <p class="titulo-trimestre">${trimestres}° ${formato}</p>
+                         <input type="tel" class="input-nota valor${formato}${trimestres}de${materia}"></form>
+                 </main>
+          
+            
+        `
+    
+        divpai.appendChild(sectionp);
+    
+    
+    
+        }
+        if(trimestres == "3" || trimestres == 3){
+            sectionp.innerHTML = `
+            <header>
+                <h3>${materia}</h3>
+            </header>
+                <main class="conteudo-form">
+                    <form action="" class="formulario-de-notas">
+                         <p class="titulo-trimestre">${trimestres - 2}° ${formato}</p>
+                         <input type="tel" class="input-nota valor${formato}${trimestres - 2}de${materia}">
+                         <p class="titulo-trimestre">${trimestres - 1}° ${formato}</p>
+                         <input type="tel" class="input-nota valor${formato}${trimestres - 1}de${materia}">
+                         <p class="titulo-trimestre">${trimestres}° ${formato}</p>
+                         <input type="tel" class="input-nota valor${formato}${trimestres}de${materia}"></form>
+                 </main>
+          
+            
+        `
+    
+        divpai.appendChild(sectionp);
+    
+    
+    
+        }
+        if (trimestres == "4" || trimestres == 4 ) {
+            sectionp.innerHTML = `
+            <header>
+                <h3>${materia}</h3>
+            </header>
+                <main class="conteudo-form">
+                    <form action="" class="formulario-de-notas">
+                         <p class="titulo-trimestre">${trimestres - 3}° ${formato}</p>
+                         <input type="tel" class="input-nota valor${formato}${trimestres - 3}de${materia}">
+                         <p class="titulo-trimestre">${trimestres - 2}° ${formato}</p>
+                         <input type="tel" class="input-nota valor${formato}${trimestres - 2}de${materia}">
+                         <p class="titulo-trimestre">${trimestres - 1}° ${formato}</p>
+                         <input type="tel" class="input-nota valor${formato}${trimestres - 1}de${materia}">
+                         <p class="titulo-trimestre">${trimestres}° ${formato}</p>
+                         <input type="tel" class="input-nota valor${formato}${trimestres}de${materia}"></form>
+                 </main>
+          
+            
+        `
+    
+        divpai.appendChild(sectionp);
+    
+    
+        }
 
     }
-    if(trimestres == "2" || trimestres == 2){
-        sectionp.innerHTML = `
-        <header>
-            <h3>${materia}</h3>
-        </header>
-            <main class="conteudo-form">
-                <form action="" class="formulario-de-notas">
-                     
-                     <p class="titulo-trimestre">${trimestres - 1}° ${formato}</p>
-                     <input type="tel" class="input-nota valor${formato}${trimestres - 1}de${materia}">
-                     <p class="titulo-trimestre">${trimestres}° ${formato}</p>
-                     <input type="tel" class="input-nota valor${formato}${trimestres}de${materia}"></form>
-             </main>
-      
-        
-    `
 
-    divpai.appendChild(sectionp);
-
-
-
-    }
-    if(trimestres == "3" || trimestres == 3){
-        sectionp.innerHTML = `
-        <header>
-            <h3>${materia}</h3>
-        </header>
-            <main class="conteudo-form">
-                <form action="" class="formulario-de-notas">
-                     <p class="titulo-trimestre">${trimestres - 2}° ${formato}</p>
-                     <input type="tel" class="input-nota valor${formato}${trimestres - 2}de${materia}">
-                     <p class="titulo-trimestre">${trimestres - 1}° ${formato}</p>
-                     <input type="tel" class="input-nota valor${formato}${trimestres - 1}de${materia}">
-                     <p class="titulo-trimestre">${trimestres}° ${formato}</p>
-                     <input type="tel" class="input-nota valor${formato}${trimestres}de${materia}"></form>
-             </main>
-      
-        
-    `
-
-    divpai.appendChild(sectionp);
-
-
-
-    }
-    if (trimestres == "4" || trimestres == 4 ) {
-        sectionp.innerHTML = `
-        <header>
-            <h3>${materia}</h3>
-        </header>
-            <main class="conteudo-form">
-                <form action="" class="formulario-de-notas">
-                     <p class="titulo-trimestre">${trimestres - 3}° ${formato}</p>
-                     <input type="tel" class="input-nota valor${formato}${trimestres - 3}de${materia}">
-                     <p class="titulo-trimestre">${trimestres - 2}° ${formato}</p>
-                     <input type="tel" class="input-nota valor${formato}${trimestres - 2}de${materia}">
-                     <p class="titulo-trimestre">${trimestres - 1}° ${formato}</p>
-                     <input type="tel" class="input-nota valor${formato}${trimestres - 1}de${materia}">
-                     <p class="titulo-trimestre">${trimestres}° ${formato}</p>
-                     <input type="tel" class="input-nota valor${formato}${trimestres}de${materia}"></form>
-             </main>
-      
-        
-    `
-
-    divpai.appendChild(sectionp);
-
-
-    }
+    
 
     
 

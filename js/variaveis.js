@@ -1,5 +1,6 @@
 const materiasFixas = ["Arte", "Biologia","Edcucação-Física", "Filosofia","Física","Geografia","História","Português", "Matemática" ,"Química","Sociologia","Edcucação-Financeira", "Ingles"];
 // const materiasFixas = ["Artes","Biologia"];
+let materiaRecaregaveis = [];
 const materiaslista = document.querySelectorAll(".checkbox-materia");
 const tabelaresultados = document.querySelector(".tabela-resultados");
 const tabelaresultadostable = document.querySelector(".materia-tabela-resultado");
@@ -47,7 +48,7 @@ let mediaMinima = 0;
 
 
 // materia Selecionadas
-let materiaASeremDesenhadas = [];
+let materiaASeremDesenhadas = materiasFixas;
 
 
 

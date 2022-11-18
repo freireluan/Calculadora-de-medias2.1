@@ -1,10 +1,10 @@
-materiasFixas.forEach(() => {
-    criaCardsForms(materiasFixas[xformulario],tribise.value,divisor.value)
+// materiasFixas.forEach(() => {
+//     criaCardsForms(materiasFixas[xformulario],tribise.value,divisor.value)
     
 
 
-    xformulario++;
+//     xformulario++;
     
-});
+// });
 
 

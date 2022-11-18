@@ -1,5 +1,11 @@
-// console.log(divisor,tribise,media,confirmaConfiguraoes);
-desenhaTabela(divisor.value,tribise.value,mediasgeraiselementopai);
+setTimeout(() => {
+    desenhaTabela(divisor.value,tribise.value,mediasgeraiselementopai);
+    
+}, 80);
+
+
+
+
 confirmaConfiguraoes.addEventListener("click", ()=>{
     
     tabelaresultadostable.innerHTML = "";
@@ -22,11 +28,7 @@ confirmaConfiguraoes.addEventListener("click", ()=>{
     //criarmazenamento(materia , quantia , formato )
 
     materiaASeremDesenhadas.forEach(() => {
-       
-        
-      
-            
-    
+
         criaTabela(materiaASeremDesenhadas[xtabela],tabelaresultadostable,tribise.value,divisor.value,xtabela);
     
         xtabela++;
