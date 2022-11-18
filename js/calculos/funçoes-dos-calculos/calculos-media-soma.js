@@ -118,7 +118,7 @@ function verificamodo(media,formato,soma,materia){
         mediasomada = (media * 2);
        
     }
-    escreveMensagem(mediasomada,soma,materia)
+    escreveMensagem(mediasomada,soma,materia,formato)
    
     
     
@@ -126,14 +126,26 @@ function verificamodo(media,formato,soma,materia){
 
 
 function   escreveMensagem(mediasomada,soma,materia){
+
+   
     if(soma  <= mediasomada){
-        mensagem = `Faltam ${mediasomada - soma} pontos`
+        mensagem = `Faltam ${mediasomada - soma} pontos`;
+        document.querySelector(`.pontosParaPassarem${materia}`).classList.add("faltaPontos");
+        document.querySelector(`.pontosParaPassarem${materia}`).classList.remove("naMedia");
+        document.querySelector(`.pontosParaPassarem${materia}`).classList.remove("passou");
+
     }
     if(soma == mediasomada){
-        mensagem = `Na média,${soma} pontos`
+        mensagem = `Na média,${soma} pontos`;
+        document.querySelector(`.pontosParaPassarem${materia}`).classList.remove("faltaPontos");
+        document.querySelector(`.pontosParaPassarem${materia}`).classList.add("naMedia");
+        document.querySelector(`.pontosParaPassarem${materia}`).classList.remove("passou");
     }
     if(soma > mediasomada){
-        mensagem = `${soma - mediasomada} pontos a mais que a média`
+        mensagem = `${soma - mediasomada} pontos a mais que a média`;
+        document.querySelector(`.pontosParaPassarem${materia}`).classList.remove("faltaPontos");
+        document.querySelector(`.pontosParaPassarem${materia}`).classList.remove("naMedia");
+        document.querySelector(`.pontosParaPassarem${materia}`).classList.add("passou");
     }
 
     alteraTextoPassouOuNao(materia,mensagem);
