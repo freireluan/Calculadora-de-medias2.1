@@ -5,6 +5,7 @@ setTimeout(() => {
 
 checkListaDeMaterias.forEach((index)=> {
     index.addEventListener("click",()=>{
+        mantemdadosnaTabelaDeMedias();
         
         
         

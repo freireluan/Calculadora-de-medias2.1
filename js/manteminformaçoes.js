@@ -66,6 +66,7 @@ window.onload = ()=>{
         xformulario++;
         
     });
+    mantemdadosnaTabelaDeMedias();
     // materiaASeremDesenhadas.forEach(() => {
     //     if(xformulario >= materiaASeremDesenhadas.length){
     //         xformulario = 0;
